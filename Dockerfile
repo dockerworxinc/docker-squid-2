@@ -8,5 +8,5 @@ ADD run.sh /run.sh
 RUN squid -z -F
 RUN yum install -y nc
 EXPOSE 3128
-VOLUME /var/spool/squid
+VOLUME /squid
 CMD /run.sh
